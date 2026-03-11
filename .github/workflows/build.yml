@@ -1,23 +1,20 @@
 name: Qt Build
 
-on:
-  push:
-  pull_request:
+on: [push]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       - name: Install Qt
         run: |
           sudo apt update
-          sudo apt install qtbase5-dev qt5-qmake build-essential
+          sudo apt install -y qtbase5-dev qt5-qmake build-essential
 
-      - name: Build project
+      - name: Build
         run: |
           qmake qt-addressbook.pro
           make
