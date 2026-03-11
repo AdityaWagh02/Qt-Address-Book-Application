@@ -1,0 +1,32 @@
+# Build folders
+build/
+build-*/
+Debug/
+Release/
+
+# Qt Creator files
+*.pro.user
+*.pro.user.*
+*.qmake.stash
+
+# Compiled files
+*.o
+*.obj
+*.exe
+*.dll
+*.a
+*.lib
+
+# Database
+*.db
+
+# Makefiles
+Makefile
+Makefile.*
+moc_*
+ui_*
+qrc_*
+
+# OS files
+.DS_Store
+Thumbs.db
