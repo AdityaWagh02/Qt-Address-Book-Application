@@ -7,8 +7,7 @@ TEMPLATE = app
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp \
-    test_contacts.cpp
+    mainwindow.cpp
 
 HEADERS += \
     mainwindow.h
